@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #eee;
+    padding: 0 20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    margin-top: 33px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    color: #414141;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 33px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+header p{
+    color: #616161;
+    font-weight: bold;
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    width: 100%;
+    overflow: hidden;
+    max-width: 800px;
+    margin-bottom: 33px;
+    transition: all 0.3s ease;
+}
+
+.search-box input {
+    display: block;
+    appearance: none;
+    -webkit-appearance: none;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    padding: 18px;
+    border-radius: 12px;
+    width: 100%;
+    transition: all 0.3 ease;
+}
+
+.search-box:focus-within{
+    box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+    transform: translate(-3px);
+
+}
+
+.resultsCounter{
+    font-size: 16px;
+    color: #616161;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.results{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.result{
+    width: 100%;
+    padding: 16px;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.result:hover{
+    box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+}
+
+.result h3{
+    color: #414141;
+    font-size: 28px;
+    margin-bottom: 16px;
+    font-family: 'Linux Libertine','Georgia','Times','Source Serif Pro',serif;
+}
+
+.result p{
+    color: #616161;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.result a{
+    display: inline-block;
+    padding: 10px;
+    width: 17%;
+    background-color: #3366cc;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 10px;
+    transition: all 0.3 ease;
+}
+
+.result a:hover{
+    background-color: #1144cc;
+}
